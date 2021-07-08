@@ -16,3 +16,10 @@ for(let i = 0; i<5;i++){
 $root.insertAdjacentHTML('beforebegin',$players);
 $root.insertAdjacentHTML('afterbegin',$htmlCardGame);
 
+const cards = document.querySelectorAll('.card');
+
+cards.forEach((card) => {
+    card.addEventListener('click',() => {
+        card.classList.toggle('active')
+    })
+})
