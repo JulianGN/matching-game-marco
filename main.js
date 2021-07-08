@@ -6,7 +6,7 @@ import BoardGame from './src/Objects/BoardGame';
 import PlayerTitle from './src/components/PlayersTitle';
 
 const $root = document.querySelector('#root');
-const $board = BoardGame();
+const $board = BoardGame(6);
 const $players = PlayerTitle(1) + PlayerTitle(2);
 
 $root.insertAdjacentHTML('beforebegin',$players);

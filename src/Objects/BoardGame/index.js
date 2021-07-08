@@ -2,13 +2,12 @@
 
 import CardGame from "../../components/CardGame";
 
-export default function BoardGame(){
-    const amountCards = 6;
-    const cards = [];
-    while(amountCards > cards.length){
-        cards.push(CardGame());
-    }
-    const $htmlBoardGame = cards.join('');
+export default function BoardGame(amountCards){
+    // const cards = [];
+    // while(amountCards > cards.length){
+    //     cards.push(CardGame());
+    // }
+    const $htmlBoardGame = CardGame().repeat(amountCards)
 
     return /*html*/`
         ${$htmlBoardGame}
