@@ -3,11 +3,12 @@ import './src/styles/generic/reset.css'; // reset padrão do Eric Meyers
 import './src/styles/elements/base.css';
 
 import BoardGame from './src/Objects/BoardGame';
-import PlayerName from './src/components/PlayerName';
+import ScoreBoard from './src/Objects/ScoreBoard';
+
 
 const $root = document.querySelector('#root');
 const $board = BoardGame(6);
-const $htmlPlayerName = PlayerName('Player 1') + PlayerName('Player 2');
+const $htmlPlayerName = ScoreBoard();
 
 $root.insertAdjacentHTML('beforebegin',$htmlPlayerName);
 
