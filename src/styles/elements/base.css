@@ -1,3 +1,11 @@
+:root{
+    font-size: 10px;
+    line-height: 10px;
+}
 body{
     background-color: var(--color-pomb-and-power);
+    max-width: 320px;
+    margin: auto;
+    font-family: 'Press Start 2P', monospace;
+    height: 100%;
 }
