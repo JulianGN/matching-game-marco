@@ -4,9 +4,6 @@ export default function CardGame(){
     return /*html*/`
         <article class="card-game">
             <img src="images/alura-pixel.svg" alt="Logo da Alura">
-        </article>
-        <article class="card-game">
-            <img src="images/logo-javascript.png" alt="Logo JavaScript">
-        </article>        
+        </article>    
     `
 }
