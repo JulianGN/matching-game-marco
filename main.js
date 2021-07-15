@@ -15,18 +15,18 @@ const $htmlPlayerName = ScoreBoard();
 
 // $root.insertAdjacentHTML('afterbegin',$board);
 
-// const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll(".card-front-back");
 
-// cards.forEach((card) => {
-//     card.addEventListener('click',() => {
-//         card.classList.toggle('active')
-//     })
-// })
+cards.forEach((card) => {
+    card.addEventListener('click',(e) => {
+        card.classList.toggle('-active')
+    })
+})
 
 $root.insertAdjacentHTML(
     "beforeend",
     `
     ${ScoreBoard()}
-    ${BoardGame(2)}
+    ${BoardGame(6)}
     `
 )
